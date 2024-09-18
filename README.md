@@ -16,19 +16,19 @@ This Python script scans a local network to identify devices by their IP and MAC
 2. **Install Required Libraries**: Use pip to install the `scapy` library.
    ```bash
    pip install scapy
-##Usage
+## Usage
 
-Save the Script: Save the provided script as network_scanner.py.
-Run the Script: Execute the script from the command line with the target IP or IP range.
+- **Save the Script: Save the provided script as network_scanner.py.
+- **Run the Script: Execute the script from the command line with the target IP or IP range.
 
 python network_scanner.py -t <target_ip>
 Replace <target_ip> with the IP address or range you want to scan (e.g., 192.168.1.1 or 192.168.1.0/24).
 
-##Example
+## Example
 python network_scanner.py -t 192.168.1.0/24
 This command will scan the IP range 192.168.1.0/24 and display the IP and MAC addresses of all devices found.
 
-##Code Explanation
+## Code Explanation
 get_arguments(): Parses command-line arguments to get the target IP or range.
 scan(ip): Performs the ARP scan to discover devices on the network.
 print_result(results_list): Prints the results in a readable format.
